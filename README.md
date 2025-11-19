@@ -20,21 +20,6 @@ This implementation includes:
 pip install -r requirements.txt
 ```
 
-## Usage
-
-```python
-from core import Graph
-from algorithm import lp_balance
-
-# Create a graph
-G = Graph(vertices=[0, 1, 2], edges=[(0, 1), (1, 2)], 
-          edge_weights={0: 0.6, 1: 0.4}, 
-          dedicated_loads={0: 0.1, 1: 0.2, 2: 0.1})
-
-# Find orientation
-orientation = lp_balance(G)
-```
-
 ## Testing
 
 ```bash
